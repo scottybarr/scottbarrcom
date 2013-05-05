@@ -1,0 +1,4 @@
+.DS_Store
+config/mongo.py
+.idea
+*.py[ocd]
