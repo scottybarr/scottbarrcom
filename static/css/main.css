@@ -4,12 +4,12 @@ body {
 }
 
 a:link, a:active, a:visited {
-    color: #ccc;
+    color: #fd717f;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ccc;
+    color: #b90314;
     text-decoration: underline;
 }
 
