@@ -1,3 +1,18 @@
 body {
     font-family: "Alegreya", Palatino, Georgia, serif;
+    color: #444;
+}
+
+a:link, a:active, a:visited {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+ul {
+
 }
