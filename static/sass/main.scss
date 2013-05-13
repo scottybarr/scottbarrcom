@@ -1,0 +1,26 @@
+@import "constants";
+@import "sidebar";
+@import "river";
+
+body {
+  font-family: "Alegreya", Palatino, Georgia, serif;
+  color: $gray;
+  margin-top: 10px;
+  zoom: 1;
+}
+
+a {
+  &:link, &:active, &:visited {
+    color: $light-pink;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $pink;
+    text-decoration: underline;
+  }
+}
+
+footer {
+  text-align: center;
+}
