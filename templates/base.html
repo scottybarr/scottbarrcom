@@ -20,7 +20,7 @@
         <meta property="og:site_name" property="Scott Barr" />
         <meta property="og:description" content="My musings on web development - Python, JavaScript."/>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css/main.css') }}">
         <link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 
         <!--[if lt IE 9]>
@@ -33,20 +33,19 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                {% include 'links.html' %}
-                {% block content %}{% endblock %}
+        <header id="left" class="left">
+            {% include "links.html" %}
+        </header>
+        <section id="river" class="river main wrapper">
+            {% block content %}{% endblock %}
+            <div class="footer-container">
+                <footer class="wrapper">
+                    {% block footer %}
+                        <h3>&copy; {{ YEAR }} <a href="http://www.scottbarr.com/">Scott Barr</a>.</h3>
+                    {% endblock %}
+                </footer>
             </div>
-        </div>
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                {% block footer %}
-                    <h3>&copy; {{ YEAR }} <a href="http://www.scottbarr.com/">Scott Barr</a>.</h3>
-                {% endblock %}
-            </footer>
-        </div>
+        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ url_for('static', filename='js/vendor/jquery-1.9.1.min.js') }}"><\/script>')</script>
