@@ -21,6 +21,7 @@
         <meta property="og:description" content="My musings on web development - Python, JavaScript."/>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
         <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css/media-queries.css') }}">
         <link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 
         <!--[if lt IE 9]>
@@ -37,7 +38,9 @@
             {% include "links.html" %}
         </header>
         <section id="river" class="river main wrapper">
-            {% block content %}{% endblock %}
+            <article id="blog">
+                {% block content %}{% endblock %}
+            </article>
             <div class="footer-container">
                 <footer class="wrapper">
                     {% block footer %}
