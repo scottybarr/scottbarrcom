@@ -1,5 +1,7 @@
 @import "constants";
 
-.right {
-  display: inline-block;
+.river {
+  width: 75%;
+  position: relative;
+  margin-left: $left-width;
 }

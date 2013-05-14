@@ -2,7 +2,7 @@
 @import "compass/css3/border-radius";
 
 .left {
-  display: inline-block;
+  position: fixed;
   width: $left-width;
   text-align: left;
 
