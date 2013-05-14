@@ -2,3 +2,4 @@
 config/mongo.py
 .idea
 *.py[ocd]
+static/css/*
