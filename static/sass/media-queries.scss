@@ -1,7 +1,8 @@
+@import "mixins";
+
 @media screen and (max-width: 1024px) {
   .left {
     position: relative;
-    display: block;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -17,20 +18,13 @@
     }
 
     .circular {
-      margin: 0 auto;
-      position: relative;
-      left: auto;
-      right: auto;
+      @include center-align;
     }
   }
 
   .river {
-    position: relative;
-    display: block;
+    @include center-align;
     width: 100%;
-    margin: 0 auto;
-    left: auto;
-    right: auto;
     padding: 0;
   }
 }

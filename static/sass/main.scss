@@ -1,8 +1,11 @@
 @import "constants";
 @import "sidebar";
 @import "river";
+@import "mixins";
 
 body {
+  width: 90%;
+  @include center-align;
   font-family: "Alegreya", Palatino, Georgia, serif;
   color: $gray;
   margin-top: 10px;
