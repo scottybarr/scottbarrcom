@@ -2,4 +2,6 @@
 config/mongo.py
 .idea
 *.py[ocd]
-static/css/*
+static/css/{constants,main,media-queries,mixins,right,river,sidebar}.css
+.sass-cache
+env/
