@@ -1,0 +1,30 @@
+@import "mixins";
+
+@media screen and (max-width: 1024px) {
+  .left {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    ul {
+      padding: 0;
+
+      li {
+        display: inline;
+        list-style-type: none;
+      }
+    }
+
+    .circular {
+      @include center-align;
+    }
+  }
+
+  .river {
+    @include center-align;
+    width: 100%;
+    padding: 0;
+  }
+}
